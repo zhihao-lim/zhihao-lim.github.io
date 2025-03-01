@@ -9,7 +9,7 @@ export interface WorkInProgressItem {
 export const workInProgressData: WorkInProgressItem[] = [
   {
     title: "To Each Their Own: How Much Do Workers Value Social Information?",
-    description: "This project investigates workers' preferences for social information in workplace settings through a novel real-effort experiment. By eliciting workers' willingness-to-pay for peer performance information both before and after task completion, we examine how individuals value and utilize social comparisons. The study explores three key dimensions: (1) workers' heterogeneous preferences for seeking or avoiding social information, (2) the underlying mechanisms driving these preferences—including social preferences, emotional responses, and information processing—and (3) the welfare implications for optimal information transmission policies. This research contributes to our understanding of social comparison effects in the workplace and provides insights for designing effective feedback systems."
+    description: "The role of social information in motivating worker effort is well-documented, but to what extent do workers value it, and what mechanisms explain their use of this information? In a real-effort experiment with over 800 workers, we distinguish among competing mechanisms—information-processing, stress-induced response, competitive- ness, and inequity aversion—by eliciting workers’ willingness-to-pay for social information provided either before or after the task."
   },
   {
     title: "Intergenerational Dilemma: Preference Over Resource Allocation (with Mark Dean, Jeffrey Guo, and Hayeon Jeong)",

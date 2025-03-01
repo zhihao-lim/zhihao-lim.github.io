@@ -9,7 +9,7 @@ export interface WorkInProgressItem {
 export const workInProgressData: WorkInProgressItem[] = [
   {
     title: "To Each Their Own: How Much Do Workers Value Social Information?",
-    description: "The role of social information in motivating worker effort is well-documented, but to what extent do workers value it, and what mechanisms explain their use of this information? In a real-effort experiment with over 800 workers, we distinguish among competing mechanisms—information-processing, stress-induced response, competitive- ness, and inequity aversion—by eliciting workers’ willingness-to-pay for social information provided either before or after the task."
+    description: "The role of social information in motivating worker effort is well-documented, but to what extent do workers value it, and what mechanisms explain their use of this information? In a real-effort experiment with around 800 workers, we distinguish among competing mechanisms—information-processing, stress-induced response, competitive- ness, and inequity aversion—by eliciting workers’ willingness-to-pay for social information provided either before or after the task."
   },
   {
     title: "Intergenerational Dilemma: Preference Over Resource Allocation (with Mark Dean, Jeffrey Guo, and Hayeon Jeong)",

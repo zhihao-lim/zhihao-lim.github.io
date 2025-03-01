@@ -26,7 +26,8 @@ const ptSerif = PT_Serif({
 });
 
 export const metadata: Metadata = {
-  title: customMetadata.title || aboutMe.name,
+  // title: customMetadata.title || aboutMe.name,
+  title: "Zhi Hao Lim",
   description: customMetadata.description || aboutMe.description,
   icons: {
     icon: "/favicon.ico",

@@ -7,7 +7,7 @@ export function TeachingExperienceEntry({ experience }: { experience: TeachingEx
         {experience.institution}
       </h3>
       {experience.roles.map((role, roleIndex) => (
-        <div key={roleIndex} className="grid grid-cols-[220px_1fr] gap-x-16 mb-6">
+        <div key={roleIndex} className="grid grid-cols-[220px_1fr] gap-x-12 mb-6">
           <span className="text-xs text-zinc-500 mt-1 whitespace-nowrap">
             {role.date}
           </span>

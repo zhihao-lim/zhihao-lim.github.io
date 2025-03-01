@@ -5,6 +5,8 @@ export interface Experience {
   description?: string;
   companyUrl?: string;
   technologies?: string[];
+  advisor?: string;
+  manager?: string;
 }
 
 export const experienceData: Experience[] = [

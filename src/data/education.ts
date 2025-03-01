@@ -3,7 +3,10 @@ export interface Education {
   institution: string;
   degree: string;
   gpa?: string;
+  advisor?: string;
   achievements?: string[];
+  thesis?: string;      
+  thesisUrl?: string;
 }
 
 export const educationData: Education[] = [

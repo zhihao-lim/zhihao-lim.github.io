@@ -22,7 +22,7 @@ export const aboutMe: AboutMe = {
   title: "Ph.D. Candidate in Economics",
   institution: "Columbia University",
   description:
-    "I am Zhi Hao, a 4th year PhD candidate in Economics at Columbia University. My research interests lie at the intersection of behavioral, experimental, and labor economics. One strand of my research focuses on what motivates workers and their information preferences. Another strand explores human decision-making more generally, particularly in relation to charitable giving, goal-setting and resource conservation. I employ field, lab, and online experiments in my research.",
+    "I am Zhi Hao, a fourth-year PhD candidate in Economics at Columbia University. My research lies at the intersection of behavioral, experimental, and labor economics. One strand of my research is understanding what motivates workers and their information preferences. Another explores the role of reference-dependent preferences in forming motivated beliefs. My work also explores human decision-making more generally, particularly in the contexts of charitable giving, goal-setting and resource conservation. I employ field, lab, and online experiments in my research.",
   email: "zl2969@columbia.edu",
   imageUrl: "/images/profile.jpg",
   githubUsername: "zhihao-lim",

@@ -1,44 +1,39 @@
-import React from "react";
+"use client";
+
 import { WorkingPaperItem } from "@/data/working-papers";
+import { useState } from "react";
 
-interface Props {
-  item: WorkingPaperItem;
-}
+export function WorkingPaperEntry({ item }: { item: WorkingPaperItem }) {
+  const [isExpanded, setIsExpanded] = useState(false);
 
-export const WorkingPaperEntry: React.FC<Props> = ({ item }) => {
   return (
-    <div className="space-y-2">
-      <h3 className="font-serif text-lg font-semibold text-zinc-900">
-        {item.title}
-      </h3>
-      <p className="text-zinc-700 text-sm">{item.description}</p>
-      {item.collaborators && (
-        <p className="text-xs text-zinc-500">
-          <span className="font-semibold">Collaborators:</span> {item.collaborators.join(", ")}
-        </p>
-      )}
-      <div className="flex space-x-4 mt-2">
-        {item.paperUrl && (
-          <a
-            href={item.paperUrl}
-            className="text-blue-600 hover:underline text-xs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Paper
-          </a>
+    <div className="space-y-4">
+      <h3 className="text-base font-serif font-medium text-zinc-900">{item.title}</h3>
+      
+      <div className="space-y-4">
+        {isExpanded && (
+          <p className="text-sm leading-relaxed text-zinc-700">{item.description}</p>
         )}
-        {item.codeUrl && (
-          <a
-            href={item.codeUrl}
-            className="text-blue-600 hover:underline text-xs"
-            target="_blank"
-            rel="noopener noreferrer"
+        
+        <div className="flex items-center gap-4">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
           >
-            Code
-          </a>
-        )}
+            {isExpanded ? "Show Less" : "↗ Abstract"}
+          </button>
+          {item.paperUrl && (
+            <a
+              href={item.paperUrl}
+              className="text-sm text-blue-600 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PDF
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
-}; 
+} 

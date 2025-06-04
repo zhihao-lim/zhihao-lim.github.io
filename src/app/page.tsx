@@ -72,10 +72,7 @@ export default function Home() {
                     );
                   case Section.Research:
                     return (
-                      <section id={Section.Research} key={sectionName}>
-                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
-                          Research
-                        </h2>
+                      <section id={Section.Research} key={sectionName} className="mt-24">
                         <div className="space-y-12">
                           {workingPapersData.length > 0 && (
                             <div>

@@ -25,11 +25,11 @@ export function WorkingPaperEntry({ item }: { item: WorkingPaperItem }) {
           {item.paperUrl && (
             <a
               href={item.paperUrl}
-              className="text-sm text-blue-600 hover:underline"
+              className="text-sm text-zinc-600 hover:text-zinc-900 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
-              PDF
+              ↗ PDF
             </a>
           )}
         </div>

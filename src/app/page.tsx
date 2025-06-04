@@ -73,10 +73,10 @@ export default function Home() {
                   case Section.Research:
                     return (
                       <section id={Section.Research} key={sectionName} className="mt-24">
-                        <div className="space-y-12">
+                        <div className="space-y-24">
                           {workingPapersData.length > 0 && (
                             <div>
-                              <h3 className="font-serif text-md mb-8 tracking-wide uppercase">
+                              <h3 className="font-serif text-md mb-12 tracking-wide uppercase">
                                 Working Papers
                               </h3>
                               <div className="space-y-12">
@@ -93,7 +93,7 @@ export default function Home() {
                           )}
                           {workInProgressData.length > 0 && (
                             <div>
-                              <h3 className="font-serif text-md mb-8 tracking-wide uppercase">
+                              <h3 className="font-serif text-md mb-12 tracking-wide uppercase">
                                 Work in Progress
                               </h3>
                               <div className="space-y-12">

@@ -8,6 +8,8 @@ import { sectionOrder, Section } from "@/data/section-order";
 import { WorkInProgressEntry } from "@/components/work-in-progress-entry";
 import { workInProgressData } from "@/data/work-in-progress";
 import { NavTabs } from "@/components/nav-tabs";
+import { WorkingPaperEntry } from "@/components/working-paper-entry";
+import { workingPapersData } from "@/data/working-papers";
 
 export default function Home() {
   return (
@@ -80,6 +82,26 @@ export default function Home() {
                               <div key={index}>
                                 <WorkInProgressEntry item={item} />
                                 {index < workInProgressData.length - 1 && (
+                                  <div className="h-px bg-zinc-200 my-8" />
+                                )}
+                              </div>
+                            ))}
+                          </div>
+                        </section>
+                      )
+                    );
+                  case Section.WorkingPapers:
+                    return (
+                      workingPapersData.length > 0 && (
+                        <section id={Section.WorkingPapers} key={sectionName}>
+                          <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
+                            Working Papers
+                          </h2>
+                          <div className="space-y-12">
+                            {workingPapersData.map((item, index) => (
+                              <div key={index}>
+                                <WorkingPaperEntry item={item} />
+                                {index < workingPapersData.length - 1 && (
                                   <div className="h-px bg-zinc-200 my-8" />
                                 )}
                               </div>

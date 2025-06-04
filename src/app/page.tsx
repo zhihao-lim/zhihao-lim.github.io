@@ -72,43 +72,47 @@ export default function Home() {
                     );
                   case Section.Research:
                     return (
-                      workInProgressData.length > 0 && (
-                        <section id={Section.Research} key={sectionName}>
-                          <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
-                            Work in Progress
-                          </h2>
-                          <div className="space-y-12">
-                            {workInProgressData.map((item, index) => (
-                              <div key={index}>
-                                <WorkInProgressEntry item={item} />
-                                {index < workInProgressData.length - 1 && (
-                                  <div className="h-px bg-zinc-200 my-8" />
-                                )}
+                      <section id={Section.Research} key={sectionName}>
+                        <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
+                          Research
+                        </h2>
+                        <div className="space-y-12">
+                          {workingPapersData.length > 0 && (
+                            <div>
+                              <h3 className="font-serif text-md mb-8 tracking-wide uppercase">
+                                Working Papers
+                              </h3>
+                              <div className="space-y-12">
+                                {workingPapersData.map((item, index) => (
+                                  <div key={index}>
+                                    <WorkingPaperEntry item={item} />
+                                    {index < workingPapersData.length - 1 && (
+                                      <div className="h-px bg-zinc-200 my-8" />
+                                    )}
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
-                        </section>
-                      )
-                    );
-                  case Section.WorkingPapers:
-                    return (
-                      workingPapersData.length > 0 && (
-                        <section id={Section.WorkingPapers} key={sectionName}>
-                          <h2 className="font-serif text-md mb-12 tracking-wide uppercase">
-                            Working Papers
-                          </h2>
-                          <div className="space-y-12">
-                            {workingPapersData.map((item, index) => (
-                              <div key={index}>
-                                <WorkingPaperEntry item={item} />
-                                {index < workingPapersData.length - 1 && (
-                                  <div className="h-px bg-zinc-200 my-8" />
-                                )}
+                            </div>
+                          )}
+                          {workInProgressData.length > 0 && (
+                            <div>
+                              <h3 className="font-serif text-md mb-8 tracking-wide uppercase">
+                                Work in Progress
+                              </h3>
+                              <div className="space-y-12">
+                                {workInProgressData.map((item, index) => (
+                                  <div key={index}>
+                                    <WorkInProgressEntry item={item} />
+                                    {index < workInProgressData.length - 1 && (
+                                      <div className="h-px bg-zinc-200 my-8" />
+                                    )}
+                                  </div>
+                                ))}
                               </div>
-                            ))}
-                          </div>
-                        </section>
-                      )
+                            </div>
+                          )}
+                        </div>
+                      </section>
                     );
                   default:
                     return null;

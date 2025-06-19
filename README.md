@@ -113,3 +113,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 ## Contributing
 
 Feel free to drop a pull request whenever!
+
+// Trigger redeployment
